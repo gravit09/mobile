@@ -13,7 +13,7 @@ export default function App() {
         <Text className="text-3xl mb-4 font-bold">Get Started With Taxi</Text>
         <Pressable
           className="w-full font-semibold rounded-lg bg-black h-20 items-center"
-          onPress={() => router.push("/profile")}
+          onPress={() => router.push("/home")}
         >
           <Text className="text-white text-3xl mt-5">Continue ➲</Text>
         </Pressable>
