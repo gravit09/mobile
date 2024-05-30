@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { ImageBackground, Pressable, Text, View } from "react-native";
+import { ImageBackground, TouchableOpacity, Text, View } from "react-native";
 import { useRouter } from "expo-router";
 import image from "../assets/screenshot_2.png";
 
@@ -11,12 +11,12 @@ export default function App() {
       <ImageBackground className="flex-1 justify-end" source={image} />
       <View className="w-full bg-white p-5 items-start">
         <Text className="text-3xl mb-4 font-bold">Get Started With Taxi</Text>
-        <Pressable
+        <TouchableOpacity
           className="w-full font-semibold rounded-lg bg-black h-20 items-center"
-          onPress={() => router.push("/home")}
+          onPress={() => router.push("/sign-in")}
         >
           <Text className="text-white text-3xl mt-5">Continue ➲</Text>
-        </Pressable>
+        </TouchableOpacity>
         <StatusBar style="auto" />
       </View>
     </View>
