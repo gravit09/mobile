@@ -6,9 +6,9 @@ const SignButton = ({ title, handlePress, isLoading }) => {
     <TouchableOpacity
       onPress={handlePress}
       disabled={isLoading}
-      className="flex items-center justify-center w-1/2 py-4 mb-6 text-sm font-medium transition duration-300 rounded-2xl  bg-grey"
+      className="flex items-center justify-center w-3/2 m-4 mt-4 py-4 mb-6 text-sm font-medium transition duration-300 rounded-2xl  bg-black"
     >
-      <Text className="text-white">{title}</Text>
+      <Text className="text-white font-bold text-xl">{title}</Text>
     </TouchableOpacity>
   );
 };
