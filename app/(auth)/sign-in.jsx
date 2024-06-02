@@ -10,6 +10,7 @@ import Find from "../components/Find";
 import img4 from "../img/search.png";
 
 const SignIn = () => {
+  //tailwind integration has to be checked and Native wind also
   return (
     <SafeAreaView className="bg-white h-full">
       <ScrollView>
