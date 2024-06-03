@@ -39,7 +39,7 @@ const SignIn = () => {
           <LogButton
             title="Continue With Mail"
             logo={img3}
-            onPress={() => router.push("/sign-up")}
+            onPress={() => router.push("/Mail")}
           />
           <Hr />
           <Find title="Find my Account" logo={img4} />
