@@ -5,7 +5,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export default function signUp() {
   return (
     <SafeAreaView>
-      <Text>signUp</Text>
+      <Text>signUp screen</Text>
     </SafeAreaView>
   );
 }
