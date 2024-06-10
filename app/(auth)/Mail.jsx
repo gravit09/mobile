@@ -16,8 +16,8 @@ const Mail = () => {
 
   const handlePress = () => {};
   return (
-    <View className="flex-1 bg-white p-4">
-      <Text className="font-bold text-3xl text-center mt-20">SignIn</Text>
+    <View className="flex-1 bg-white p-4 justify-center">
+      <Text className="font-bold text-3xl text-center ">SignIn</Text>
       <Text className="text-lg mt-4">Email</Text>
       <TextInput
         className="border-2 border-gray-300 p-3 text-lg font-medium rounded-md"

@@ -2,12 +2,11 @@ import { View, Text } from "react-native";
 import React from "react";
 
 const Hr = () => {
-  //this is used to provide horizontal lines
   return (
-    <View>
-      <View className="border-b border-grey mr-64 ml-4 mt-6"></View>
-      <Text className="ml-52 -mt-4 text-xl color-grey">or</Text>
-      <View className="border-b border-grey ml-64 mr-4 mb-5 -mt-3"></View>
+    <View className="flex-row items-center my-4">
+      <View className="flex-1 h-px bg-gray-400 mx-2" />
+      <Text className="text-lg text-gray-400 mx-2">or</Text>
+      <View className="flex-1 h-px bg-gray-400 mx-2" />
     </View>
   );
 };

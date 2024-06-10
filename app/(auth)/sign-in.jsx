@@ -12,16 +12,15 @@ import img4 from "../img/search.png";
 
 const SignIn = () => {
   const router = useRouter();
-  //tailwind integration has to be checked and Native wind also
   return (
-    <SafeAreaView className="bg-white h-full">
+    <SafeAreaView className="bg-white h-full ">
       <ScrollView>
-        <View className="w-full justify-center">
-          <Text className="text-xl font-medium m-4 color-black">
+        <View className="w-full mt-4 justify-center">
+          <Text className="text-xl  font-medium m-4 color-black">
             Enter Your Mobile Number
           </Text>
           <TextInput
-            className="border-2 border-grey ml-4 mr-5 h-14 text-lg font-medium rounded-md"
+            className="border-2 p-3 text-sm border-grey ml-4 mr-5 h-14 text-lg font-medium rounded-md"
             placeholder="Enter Your Mobile Number here"
           />
           <SignButton title="Continue" handlePress={{}} />
