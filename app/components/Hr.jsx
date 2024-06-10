@@ -2,6 +2,7 @@ import { View, Text } from "react-native";
 import React from "react";
 
 const Hr = () => {
+  //this is used to provide horizontal lines
   return (
     <View>
       <View className="border-b border-grey mr-64 ml-4 mt-6"></View>

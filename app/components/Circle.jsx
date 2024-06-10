@@ -4,6 +4,7 @@ import arrow from "../img/arrow.png";
 import { useRouter } from "expo-router";
 
 const Circle = () => {
+  //circe button with home route
   const router = useRouter();
   return (
     <TouchableOpacity
