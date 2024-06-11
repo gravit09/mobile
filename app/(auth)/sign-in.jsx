@@ -1,4 +1,5 @@
-import { View, Text, SafeAreaView, ScrollView, TextInput } from "react-native";
+import { View, Text, ScrollView, TextInput } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import React from "react";
 import { useRouter } from "expo-router";
 import SignButton from "../components/SignButton";
