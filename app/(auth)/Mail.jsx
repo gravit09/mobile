@@ -27,32 +27,40 @@ const Mail = () => {
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       {/* whenever user click somewhere else keyboard get closed using touchableWithoutFeedback*/}
-      <View className="flex-1 bg-white p-4 justify-center">
+      <View className="flex-1 bg-white  justify-center">
         <Text className="font-bold text-3xl text-center ">SignIn</Text>
-        <Text className="text-lg mt-4">Email</Text>
-        <TextInput
-          className="border-2 border-gray-300 p-3 text-lg font-medium rounded-md"
-          placeholder="Enter Your email id here"
-          keyboardType="email-address"
-        />
-        <Text className="text-lg mt-4">Password</Text>
-        <View className="flex-row items-center border-2 border-gray-300 p-3 rounded-md">
+        <View className="p-4">
+          <Text className="text-lg mt-4">Email</Text>
           <TextInput
-            className="flex-1 text-lg font-medium"
-            placeholder="Enter Your password here"
-            secureTextEntry={!showPass}
+            className="border-2 border-gray-300 p-3 text-lg font-medium rounded-md"
+            placeholder="Enter Your email id here"
+            keyboardType="email-address"
           />
-          <TouchableOpacity onPress={() => setShowPass(!showPass)}>
-            <Image
-              source={showPass ? open : closed}
-              style={{ width: 24, height: 24 }}
+          <Text className="text-lg mt-4">Password</Text>
+          <View className="flex-row items-center border-2 border-gray-300 p-3 rounded-md">
+            <TextInput
+              className="flex-1 text-lg font-medium"
+              placeholder="Enter Your password here"
+              secureTextEntry={!showPass}
             />
-          </TouchableOpacity>
-        </View>
-        <View className="flex-row justify-end m-1">
-          <Link href="/sign-up">Forget password?</Link>
+            <TouchableOpacity onPress={() => setShowPass(!showPass)}>
+              <Image
+                source={showPass ? open : closed}
+                style={{ width: 24, height: 24 }}
+              />
+            </TouchableOpacity>
+          </View>
+          <View className="flex-row justify-end m-1">
+            <Link href="/sign-up">Forget password?</Link>
+          </View>
         </View>
         <SignButton isLoading={loading} onPress={handlePress} title="SignIn" />
+        <Text className="text-md mt-8 text-center">
+          Don't have a account?
+          <Link className="font-bold" href="/sign-up">
+            SignUp
+          </Link>
+        </Text>
       </View>
     </TouchableWithoutFeedback>
   );
