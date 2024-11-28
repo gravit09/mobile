@@ -24,7 +24,7 @@ const Mail = () => {
   const [loading, setLoading] = useState(false);
 
   const submit = () => {
-    createUser("kallu@gmail.com", "password", "sherrr");
+    createUser("kallu@gmail.com", "password", "tun");
   };
 
   return (

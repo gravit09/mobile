@@ -12,6 +12,7 @@ import SignButton from "../components/SignButton";
 import open from "../img/visible.png";
 import closed from "../img/eye.png";
 import { Link } from "expo-router";
+import { createUser } from "../../lib/appwrite";
 
 const SignUp = () => {
   const [showPass, setShowPass] = useState(false);
@@ -22,7 +23,9 @@ const SignUp = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handlePress = () => {};
+  const submit = () => {
+    createUser("cheetah@gmail.com", "password", "cheetah");
+  };
 
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
@@ -68,7 +71,7 @@ const SignUp = () => {
             <Link href="/sign-up">Forget password?</Link>
           </View>
         </View>
-        <SignButton isLoading={loading} onPress={handlePress} title="SignUp" />
+        <SignButton isLoading={loading} handlePress={submit} title="SignUp" />
         <Text className="text-md mt-8 text-center">
           Already have an account?
           <Link className="font-bold" href="/Mail">

@@ -22,14 +22,15 @@ const SignIn = () => {
           <Text className="text-xl font-medium m-4 color-black">
             Enter Your Mobile Number
           </Text>
-          <View className="flex-row items-center border-2 border-grey ml-4 mr-5 h-14 rounded-md">
-            <Text className="pl-3 text-lg font-medium">+91</Text>
+          <View className="flex-row items-center border-2 border-gray-300 mx-4 h-14 rounded-md">
+            <Text className="pl-3  text-lg font-medium">+91</Text>
             <TextInput
-              className="flex-1 pb-1/2 pl-2 text-sm text-lg font-medium"
+              className="flex-1 m-auto pl-2 text-lg"
               placeholder="Enter Your Mobile Number"
               keyboardType="phone-pad"
               value={mobileNumber}
               onChangeText={setMobileNumber}
+              placeholderTextColor="#A0AEC0"
             />
           </View>
           <SignButton title="Continue" handlePress={{}} />
